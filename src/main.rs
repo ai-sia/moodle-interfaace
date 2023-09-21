@@ -37,7 +37,7 @@ pub async fn send_text(text: &str, conversation_id: &str, base_url: &str, sessio
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     for _ in 0..10000 {
-        send_text("Hallo Vincent :)", "12697", "moodle.jobelmannschule.de", "sqdb7tpqibbedlia72p0f288jq", "rjPnSxnTUp").await?;
+        send_text("Hallo Vincent :)", "12697", "moodle.jobelmannschule.de", "", "").await?;
     }
     Ok(())
 }
